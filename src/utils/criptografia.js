@@ -21,7 +21,7 @@ const descriptografar = ({ivSalvo, tagSalva, dadoSalvo}) => {
     decipher.setAuthTag(tagSalva);
 
     const descriptografia = Buffer.concat([decipher.update(dadoSalvo), decipher.final()]);
-
+    
     return descriptografia.toString("utf8");
 }
 

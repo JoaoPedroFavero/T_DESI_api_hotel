@@ -20,7 +20,7 @@ CREATE TABLE quartos(
 	categoria VARCHAR(45) NOT NULL,
 	capacidade INT NOT NULL,
 	valor_diaria DECIMAL(8,2) NOT NULL,
-	status_quarto ENUM('reservado', 'disponivel')
+	status_quarto ENUM('reservado', 'disponivel') DEFAULT 'disponivel' NOT NULL
 );
 
 CREATE TABLE reservas(
@@ -33,4 +33,3 @@ CREATE TABLE reservas(
     FOREIGN KEY (id_hospede) REFERENCES hospedes (id) ON DELETE CASCADE,
     FOREIGN KEY (id_quarto) REFERENCES quartos (id) ON DELETE CASCADE
 );
-

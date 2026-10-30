@@ -18,3 +18,13 @@ Estou usando ainda, calma...
     }
 
 ```
+
+## INPUT dos QUARTOS
+```json
+    {
+        "categoria": "", 
+        "capacidade": "", 
+        "valor_diaria": ""
+    }
+
+```
